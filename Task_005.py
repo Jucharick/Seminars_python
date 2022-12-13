@@ -3,7 +3,7 @@
 
 num = int(input('Введите число: '))
 
-if ((num % 5 == 0) and (num % 10 == 0) or (num % 15 == 0)) and (num % 30 != 0):
+if (num % 5 == 0 and num % 10 == 0 or num % 15 == 0) and num % 30 != 0:
     print('Число кратно 5 и 10 или 15, но не 30')
 else:
     print('Число не подходит по условиям')
