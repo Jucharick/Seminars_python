@@ -47,3 +47,11 @@ if expression:
 my_num = ''
 if my_num:
     print('Сработало') # НЕ Сработало, строка пустая
+
+number = 7
+if number > 5:
+    print('Сработал IF')
+elif number > 6:
+    print('Сработал ELIF')
+else:
+    print('Сработал ELSE')
