@@ -84,3 +84,17 @@ people_id[1] = {'name': 'STONE', 'age': 38, 'comment': 'Молодец'}
 people_id[2] = {'name': 'Андрей беляев', 'age': 18, 'comment': 'Еще больший молодец'}
 print(people_id)
 print(people_id.get(1).get('name'))
+
+
+my_new_list = [4545, 4,5,68,8,8,8,8,8]
+
+
+def my_count (my_new_list: list, number: int) -> int:
+    count = 0
+    for i in my_new_list:
+        if i == number:
+            count +=1
+    return count
+
+print(my_count(my_new_list, 8))
+print(my_new_list.count(8))
