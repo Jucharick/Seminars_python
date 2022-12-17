@@ -38,3 +38,12 @@ i = 0
 while i <10: # можено перебирать бесконечно )))
     print(i)
     i+=1
+
+# if
+expression = 1 # это True
+if expression:
+    print('Сработало')
+
+my_num = ''
+if my_num:
+    print('Сработало') # НЕ Сработало, строка пустая
