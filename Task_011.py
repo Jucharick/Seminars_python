@@ -3,11 +3,13 @@
 #     - Для N = 5: 1, -3, 9, -27, 81
 
 # первый вариант
-# n = int(input('Введите число: '))
-# r =v1
-# for i in range(n):
-#     print (r, and =" "):
-#     r*=3
+n = int(input('Введите число: '))
+r = 1
+for i in range(n):
+    print (r, end = ' ')
+    r*=-3
+print()
+
 
 # второй вариант
 num = int(input('Введите число: '))
