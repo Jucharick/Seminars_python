@@ -55,20 +55,25 @@ delivery = {'Ананас': 7, 'Банан': 5, 'Лайм': 2}
 
 new_dict = {}
 keys_1 = set()
-for i in keys_1:
-    new_dict[i] = storage.get(i, 0) + delivery.get(i, 0)
+for key, value in delivery.items():
+    new_dict[key] = storage.get(key, value) + delivery.get(key, value)
 print(storage)
 print(delivery)
-print(new_dict) # !!!!!!!!!!!!!!!!
+print()
+print('new_dict')
+print(new_dict)
 
+print()
 print('storage.items() выведет ключ + значение')
 for i in storage.items(): # выведет ключ + значение
     print(i)
 
+print()
 print('storage.keys() выведет ключ')
 for i in storage.keys(): # выведет ключ (это значение по умолчанию)
     print(i)
 
+print()
 print('storage.values() выведет значение')
 for i in storage.values(): # выведет значение
     print(i)
