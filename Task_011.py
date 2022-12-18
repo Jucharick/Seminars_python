@@ -6,7 +6,7 @@
 n = int(input('Введите число: '))
 r = 1
 for i in range(n):
-    print (r, end = ' ')
+    print (r, end = '  ')
     r*=-3
 print()
 
