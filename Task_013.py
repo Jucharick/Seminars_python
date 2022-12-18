@@ -43,3 +43,8 @@ def check(my_list: list, search: str):
 check(my_list1, 'qwe')
 check(my_list2, 'йцу')
 check(my_list3, '123')
+
+print()
+# аналогично 
+print(my_list1.index('qwe', 2))
+print(my_list2.index('йцу', 2))
