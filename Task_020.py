@@ -7,3 +7,8 @@ for i in range(1, num_1*num_2+1):
     if i % num_1 == 0 and i % num_2 == 0:
         print(f'НОК => {i}')
         break # выходим при нахождении наименьшего (идем от 1 до num_1*num_2)
+
+for i in range(max(num_1, num_2), num_1*num_2+1, max(num_1, num_2)): # идем с шагом по максимальному числу (так быстрее)
+    if i % num_1 == 0 and i % num_2 == 0:
+        print(f'НОК => {i}')
+        break
