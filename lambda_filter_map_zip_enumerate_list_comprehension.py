@@ -49,5 +49,5 @@ def chek_num(x):
 list_1_chet = list(filter(chek_num, list_1))
 print(list_1_chet)
 
-list_2_chet = list(filter(lambda x: x%2==0, list_1))
+list_2_chet = list(filter(lambda x: not x%2, list_1))
 print(list_2_chet)
