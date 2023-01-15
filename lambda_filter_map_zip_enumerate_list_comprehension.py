@@ -38,6 +38,13 @@ def sum3(a, b): return a+b if a >= 5 else 0
 print(sum3(7, 6))
 
 
+def print_smile(name):
+    print (f'{name}, Улыбнись!')
+on_click = lambda name: print_smile(name)
+
+on_click('Юля')
+
+
 # map
 l = [i for i in range(12)]
 l = list(map(lambda x: x+10 if x > 6 else x+0, l))
