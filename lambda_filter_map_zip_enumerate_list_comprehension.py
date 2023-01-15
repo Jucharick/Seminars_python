@@ -1,9 +1,13 @@
 # lambda, filter, map, zip, enumerate, list comprehension
-
+from random import randint as RI
 
 # list comprehension
 list1 = [i for i in range(1, 11)]
 print(list1)
+
+# словарь
+my_dic = {x: x**2 for x in range(10)}
+print(my_dic)
 
 
 # enumerate
