@@ -11,3 +11,10 @@ c = [12, 34, 567, 671]
 new_c = sorted(c, reverse=True) # сортировка по убыванию
 print(new_c)
 
+def sorting(x):
+    if x%2==0:
+        return True
+    else:
+        return False
+
+r = sorted(c, key = sorting)
