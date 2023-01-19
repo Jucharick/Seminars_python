@@ -12,5 +12,5 @@
 
 my_array = [219, 234, 890, 81, 73, 96]
 r = sorted(my_array, key = lambda x: x%10) 
-print(r)
+print(r) 
 
