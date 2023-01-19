@@ -17,7 +17,7 @@ print(odd)
 
 for index, value in enumerate(my_array):
     if value %2 == 0:
-        my_array[index] = even.pop(0) # первый элемент списка even удаляем
+        my_array[index] = even.pop(0) # pop() - удаляет элемент и возращает тот, который удален / первый элемент списка even удаляем
     else:
         my_array[index] = odd.pop(0)
 
