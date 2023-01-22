@@ -8,10 +8,16 @@ import division_remainder
 
 
 def calc():
-    num_type = int(view.get_value(1))
-    value_a = view.get_value(num_type)
-    value_sign = view.get_sign()
-    value_b= view.get_value(num_type)
+    num_type = int(view.get_type())
+    print(num_type)
+    if num_type == 1:
+        value_a = view.get_value_int()
+        value_sign = view.get_sign()
+        value_b= view.get_value_int()
+    else:
+        value_a = view.get_value_complex()
+        value_sign = view.get_sign()
+        value_b= view.get_value_complex()
     if value_sign == '+':
         result = sum.do_it(value_a, value_b)
     if value_sign == '-':
