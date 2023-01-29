@@ -4,7 +4,7 @@
 import telebot
 from telebot import types
 user_sweet = 0
-bot = telebot.TeleBot('5999387270:AAGCy3Qz8UiI4fQFikMAV1S9Fxwl4C2S_O0')
+bot = telebot.TeleBot('TOKEN')
 
 @bot.message_handler(commands = ['start']) # вызов функции по команде в списке
 def start(message):
