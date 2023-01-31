@@ -4,13 +4,13 @@
 import telebot
 from telebot import types
 user_sweet = 0
-bot = telebot.TeleBot('TOKEN')
+bot = telebot.TeleBot('')
 
 @bot.message_handler(commands = ['start']) # вызов функции по команде в списке
 def start(message):
     bot.send_message(message.chat.id, f'/button') # отправка сообщения (кому отправляем, что отправляем(str))
 
-def sum(message):
+def summa(message):
     summa = sum(list(map(int, message.text.split())))
     bot.send_message(message.chat.id, str(summa))
     button(message)
@@ -43,7 +43,7 @@ def button(message):
 def controller(message):
     if message.text == 'сумма':
         bot.send_message(message.chat.id, f'Введи два числа через пробел для нахождения их суммы')
-        bot.register_next_step_handler(message, sum)
+        bot.register_next_step_handler(message, summa)
     elif message.text == 'конфеты':
         bot.send_message(message.chat.id, f'Привет! {message.from_user.first_name}. Введи колличество конфет: ') # отправка сообщения (кому отправляем, что отправляем(str))
         bot.register_next_step_handler(message, input_sweet)
